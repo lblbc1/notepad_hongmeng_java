@@ -1,0 +1,65 @@
+{
+  "app": {
+    "bundleName": "cn.lblbc.notepad",
+    "vendor": "lblbc",
+    "version": {
+      "code": 1000000,
+      "name": "1.0.0"
+    }
+  },
+  "deviceConfig": {},
+  "module": {
+    "package": "cn.lblbc.notepad",
+    "name": "cn.lblbc.notepad.LblApp",
+    "mainAbility": "cn.lblbc.notepad.ui.NoteListAbility",
+    "deviceType": [
+      "phone"
+    ],
+    "distro": {
+      "deliveryWithInstall": true,
+      "moduleName": "entry",
+      "moduleType": "entry",
+      "installationFree": false
+    },
+    "abilities": [
+      {
+        "skills": [
+          {
+            "entities": [
+              "entity.system.home"
+            ],
+            "actions": [
+              "action.system.home"
+            ]
+          }
+        ],
+        "orientation": "unspecified",
+        "visible": true,
+        "name": "cn.lblbc.notepad.ui.NoteListAbility",
+        "icon": "$media:icon",
+        "description": "$string:mainability_description",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "cn.lblbc.notepad.ui.AddNoteAbility",
+        "icon": "$media:icon",
+        "description": "$string:entry_MainAbility",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "cn.lblbc.notepad.ui.EditNoteAbility",
+        "icon": "$media:icon",
+        "description": "$string:entry_MainAbility",
+        "label": "$string:entry_MainAbility",
+        "type": "page",
+        "launchType": "standard"
+      }
+    ]
+  }
+}

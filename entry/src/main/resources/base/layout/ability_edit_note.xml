@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:end_padding="20vp"
+    ohos:orientation="vertical"
+    ohos:start_padding="20vp">
+
+    <DirectionalLayout
+        ohos:height="match_content"
+        ohos:width="match_parent"
+        ohos:orientation="horizontal"
+        ohos:top_margin="5vp">
+
+        <StackLayout
+            ohos:height="match_content"
+            ohos:width="match_parent"
+            ohos:layout_alignment="vertical_center"
+            ohos:weight="1">
+
+            <Image
+                ohos:id="$+id:back_image"
+                ohos:height="match_content"
+                ohos:width="match_content"
+                ohos:image_src="$media:back"
+                ohos:layout_alignment="vertical_center"/>
+        </StackLayout>
+
+        <Image
+            ohos:id="$+id:save_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$media:save"
+            ohos:margin="5vp"/>
+
+        <Image
+            ohos:id="$+id:del_image"
+            ohos:height="match_content"
+            ohos:width="match_content"
+            ohos:image_src="$media:delete"
+            ohos:margin="5vp"/>
+    </DirectionalLayout>
+
+    <TextField
+        ohos:id="$+id:content_text_field"
+        ohos:height="match_parent"
+        ohos:width="match_parent"
+        ohos:hint="请输入内容"
+        ohos:scrollable="true"
+        ohos:text_alignment="start"
+        ohos:text_size="20fp"
+        ohos:top_padding="20vp"/>
+
+</DirectionalLayout>
